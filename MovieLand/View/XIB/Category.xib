@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CategoryViewController" customModule="MovieLand" customModuleProvider="target">
+            <connections>
+                <outlet property="slideClose" destination="6dx-R2-kd3" id="bTu-t1-8z0"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Sv9-ff-8Ik"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="QNQ-TX-Mye">
+                    <rect key="frame" x="30" y="68" width="354" height="202"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DdG-gM-bLQ" userLabel="Button01">
+                            <rect key="frame" x="0.0" y="0.0" width="354" height="34"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                            <state key="normal" title="Popular">
+                                <color key="titleColor" systemColor="labelColor"/>
+                            </state>
+                            <connections>
+                                <action selector="popularButton:" destination="-1" eventType="touchUpInside" id="XIV-6G-99F"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UtR-Hu-5ep" userLabel="Button02">
+                            <rect key="frame" x="0.0" y="56" width="354" height="34"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                            <state key="normal" title="Upcoming">
+                                <color key="titleColor" systemColor="labelColor"/>
+                            </state>
+                            <connections>
+                                <action selector="upcommingButton:" destination="-1" eventType="touchUpInside" id="1AM-CI-2ge"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zw5-x1-OCh" userLabel="Button03">
+                            <rect key="frame" x="0.0" y="112" width="354" height="34"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                            <state key="normal" title="Top Rated">
+                                <color key="titleColor" systemColor="labelColor"/>
+                            </state>
+                            <connections>
+                                <action selector="topRatedButton:" destination="-1" eventType="touchUpInside" id="qIu-8N-Wgp"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uk0-eU-hUf" userLabel="Button04">
+                            <rect key="frame" x="0.0" y="168" width="354" height="34"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                            <state key="normal" title="Now Playing">
+                                <color key="titleColor" systemColor="labelColor"/>
+                            </state>
+                            <connections>
+                                <action selector="nowPlayingButton:" destination="-1" eventType="touchUpInside" id="WT0-do-Hor"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6dx-R2-kd3">
+                    <rect key="frame" x="177" y="14" width="60" height="4"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="4" id="CaY-3K-mP3"/>
+                        <constraint firstAttribute="width" constant="60" id="eXO-Nk-d2T"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="6dx-R2-kd3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="14" id="GcZ-nj-qwY"/>
+                <constraint firstItem="6dx-R2-kd3" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="LFy-y4-qpJ"/>
+                <constraint firstItem="QNQ-TX-Mye" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="30" id="NyF-cz-Q0f"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="QNQ-TX-Mye" secondAttribute="trailing" constant="30" id="Vip-eG-CHh"/>
+                <constraint firstAttribute="bottom" secondItem="QNQ-TX-Mye" secondAttribute="bottom" constant="30" id="gKF-XQ-AiZ"/>
+                <constraint firstItem="QNQ-TX-Mye" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="zmW-LH-t7d"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-701.44927536231887" y="-261.16071428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
